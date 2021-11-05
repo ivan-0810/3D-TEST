@@ -18,12 +18,11 @@ import favicon from '../public/onebeer-favicon-black.svg'
           name="robots"
           content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
         />
-        <meta property="og:locale" content="fr_FR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="One Beer" />
-        <meta property="og:description" content="Une Bière, Six Saveurs, Histoires Infinies" />
-        <meta property="og:url" content="https://onebeer.fr/" />
-        <title>3D TESTr</title>
+        <meta property="og:title" content="3D TEST" />
+        <meta property="og:description" content="3D TEST" />
+        <meta property="og:url" content="https://3-d-test.vercel.app/" />
+        <title>3D TEST</title>
         <link rel="shortcut icon" href={favicon} />
       </Head>
 
