@@ -1,0 +1,89 @@
+.carousel {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  .wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    .itemsInnerWrapper {
+      transform: unset !important;
+    }
+  }
+  .chevron_right {
+    right: 6px;
+  }
+  .chevron_left {
+    left: 6px;
+  }
+}
+.chevron {
+  .arrow-white-left-icon,
+  .arrow-white-right-icon,
+  .arrow-transparent-left-icon,
+  .arrow-white-right-bg-transparent,
+  .arrow-white-left-bg-transparent {
+    @include background(center, no-repeat, contain);
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+.itemsWrapper{
+  overflow:hidden;
+}
+.beerWrapper{
+  img {
+     -webkit-transition:all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  }
+}
+.beerWrapper:hover{
+  img{
+  transform:scale(1.02);
+  }
+}
+
+@media (max-width: 576.98px) {
+  .carousel {
+    width: 100%;
+    padding: 0 1.5px;
+    height: 400px;
+    .img-wrapper {
+      height: 200px;
+      img {
+        height: calc(200px - 64px);
+      }
+    }
+    .wrapper, .itemsInnerWrapper, .itemsWrapper {
+      height: 100%;
+    }
+    .wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .chevron {
+      height: 26px;
+      top: 203px;
+      z-index: 2;
+      background-color: transparent;
+      button {
+        color: $red;
+      }
+    }
+    .chevron_right {
+      right: 0px;
+    }
+    .chevron_left {
+      left: 0px;
+    }
+  }
+}

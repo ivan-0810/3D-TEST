@@ -1,0 +1,41 @@
+{
+  "name": "beers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.19",
+    "@react-three/drei": "^4.3.3",
+    "@react-three/fiber": "^6.0.20",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.21.1",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "bootstrap": "^4.6.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "10.0.9",
+    "next-images": "^1.7.0",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "17.0.2",
+    "react-fullpage": "^0.1.19",
+    "react-intl": "^5.17.5",
+    "react-items-carousel": "^2.8.0",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^7.2.3",
+    "react-spring": "^9.1.2",
+    "react-string-replace": "^0.4.4",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-form": "^8.3.7",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8",
+    "three": "^0.128.0"
+  }
+}
