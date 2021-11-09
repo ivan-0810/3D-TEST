@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className="container-fluid home">
       <div className="row beer-row align-items-center m-0">
         <div className="col-12 beer-animate px-0">
-       <div className="w-100 h-100 d-flex" id="beer-1">
+       <div className="w-100 h-100 d-flex mt-5 pt-5" id="beer-1">
         <Home_Beer_Animation bottle={bottles[0]} />
           </div>
     
