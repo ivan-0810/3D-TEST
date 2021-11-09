@@ -2,7 +2,7 @@
 .home {
   height: 100vh;
   background-image: url('../images/tw-lab-Background\ –\ White.png');
-  background-position: center;
+  background-position: center -180px;
   background-repeat: no-repeat;
   background-size: cover;
   .beer-row{
@@ -10,6 +10,6 @@
     height: 100vh;
   }
   .beer-animate{
-    height:50vh;
+    height:70vh;
   }
 }
