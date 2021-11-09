@@ -2,7 +2,7 @@
 .home {
   height: 100vh;
   background-image: url('../images/tw-lab-Background\ –\ White.png');
-  background-position: center -220px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   .animation{
@@ -12,5 +12,38 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 9;
   }
+  .curation {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+}
+
+
+
+.spinner-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: $white;
+  box-shadow: -1px 5px 43px -3px rgb(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 5px 43px -3px rgb(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 5px 43px -3px rgb(0, 0, 0, 0.15);
+}
+
+.eclipse_spinner {
+  background-image: url('../spinners/Eclipse-1s-200px.svg');
+  @include background(center, no-repeat, cover);
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  color: $white;
+  border-radius: 50%;
 }

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
 import favicon from '../public/onebeer-favicon-black.svg'
+import { is_Spinner_loading_true } from '../store/spinner/action';
   const Layout = props => {
   const { bg_color,menu_text, menu_icons, single_beer_logo } = props;
   const spinner = useSelector(state => state.spinner.is_spinner_loading);
@@ -25,7 +26,11 @@ import favicon from '../public/onebeer-favicon-black.svg'
         <title>3D TEST</title>
         <link rel="shortcut icon" href={favicon} />
       </Head>
-
+      {spinner && (
+        <div className="spinner-wrapper rounded-circle">
+          <div className="eclipse_spinner"></div>
+        </div>
+      )}
       <main className="main-content">{props.children}</main>
     </div>
   );
