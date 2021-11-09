@@ -11,7 +11,7 @@ import Model from '../../public/Model';
 
 const Home_Beer_Animation = () => {
   return (
-    <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 55 }}>
+    <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 75 }}>
          <ambientLight intensity={1.13} />
       <spotLight
         intensity={0.5}
@@ -20,7 +20,7 @@ const Home_Beer_Animation = () => {
         position={[10, 10, 10]}
         castShadow
       />
-      <OrbitControls />
+      <OrbitControls  enableZoom={false}/>
       <Suspense fallback={null}>
         <Model />
       </Suspense>

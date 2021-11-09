@@ -22,6 +22,7 @@ export default function Model({ ...props }) {
    actions['Cube_HD.002_cell.017Action'].play();
    actions['Cube_HD.002_cell.018Action'].play();
    actions['Cube_HD.002_cell.019Action'].play();
+  
   }, [])
   return (
     <group ref={group} {...props} dispose={null}>
