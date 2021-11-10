@@ -32,7 +32,7 @@ import image from '../public/Untitled-1.jpg'
         <meta property="fb:pages" content="196280740558278" />
         <meta property="fb:app_id" content="843133229548398" />
 
-        <title>3D TEST</title>
+        <title>Tomorrow Lab</title>
         <link rel="shortcut icon" href={favicon} />
       </Head>
    
