@@ -17,26 +17,6 @@ import Digital from '../../public/Digital';
 import { useSelector, useDispatch } from 'react-redux'
 import { is_Spinner_loading_false } from '../../store/spinner/action'
 
-const Scene = () => {
-  const {
-    camera,
-    gl: { domElement },
-  } = useThree();
-
-  return (
-    <>
-      <Model  position={[0, -1, 0]}/>
-      {/* <MapControls
-        args={[camera, domElement]}
-        enablePan={false}
-        autoRotate={true}
-        enableZoom={false}
-        minPolarAngle={Math.PI / 2}
-        maxPolarAngle={Math.PI / 2}
-      /> */}
-    </>
-  );
-};
 const Animation = () => {
   const dispatch = useDispatch()
   const [ isFinished, setIsFinished ] = useState(false);
@@ -61,7 +41,8 @@ const Animation = () => {
       />
      
       <Suspense fallback={null}>
-        <Scene />
+ 
+        <Model  position={[0, -1, 0]} rotationSpeed={1}/>
         <Digital position={[-5, -3, 0]} />
         <Alternative position={[0, -3, 0]} />
         <Curation position={[+5, -3, 0]} />
