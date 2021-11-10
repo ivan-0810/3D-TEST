@@ -17,7 +17,7 @@ const Animation = () => {
         />
 
         <Suspense fallback={null}>
-          <OrbitControls enableZoom={false}/>
+          <OrbitControls enableZoom={false}  enablePan={false}/>
           <Model position={[0, -1, 0]} rotationSpeed={1} />
         </Suspense>
       </Canvas>

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
-import favicon from '../public/onebeer-favicon-black.svg'
+import favicon from '../public/model.svg'
 import { is_Spinner_loading_true } from '../store/spinner/action';
   const Layout = props => {
   const { bg_color,menu_text, menu_icons, single_beer_logo } = props;
