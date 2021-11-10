@@ -1,3 +1,0 @@
-const ru ={
-    lang: "ru",
-}

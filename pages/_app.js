@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/assets/scss/main.scss';
-import { wrapper } from '../store/store';
+
 
 function MyApp({ Component, pageProps }) {
 
@@ -10,4 +10,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default wrapper.withRedux(MyApp);
+export default MyApp;
