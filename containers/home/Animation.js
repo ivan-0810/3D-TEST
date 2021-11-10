@@ -5,7 +5,9 @@ import {
   OrbitControls,
   ContactShadows,
   Environment,
-  PerspectiveCamera
+  PerspectiveCamera,
+  FlyControls,
+  MapControls
 } from '@react-three/drei';
 import Model from '../../public/Model';
 import Model_1 from '../../public/Model_1';
@@ -14,6 +16,27 @@ import Curation from '../../public/Curation';
 import Digital from '../../public/Digital';
 import { useSelector, useDispatch } from 'react-redux'
 import { is_Spinner_loading_false } from '../../store/spinner/action'
+
+const Scene = () => {
+  const {
+    camera,
+    gl: { domElement },
+  } = useThree();
+
+  return (
+    <>
+      <Model  position={[0, -1, 0]}/>
+      {/* <MapControls
+        args={[camera, domElement]}
+        enablePan={false}
+        autoRotate={true}
+        enableZoom={false}
+        minPolarAngle={Math.PI / 2}
+        maxPolarAngle={Math.PI / 2}
+      /> */}
+    </>
+  );
+};
 const Animation = () => {
   const dispatch = useDispatch()
   const [ isFinished, setIsFinished ] = useState(false);
@@ -21,6 +44,9 @@ const Animation = () => {
   useEffect(() => {
    dispatch(is_Spinner_loading_false())
   }, [Model])
+
+
+  
   return (
     <>
 
@@ -33,10 +59,9 @@ const Animation = () => {
         position={[10, 10, 10]}
         castShadow
       />
-      <OrbitControls  enableZoom={false}  minPolarAngle={Math.PI / 2}
-        maxPolarAngle={Math.PI / 2}/>
+     
       <Suspense fallback={null}>
-        <Model  position={[0, -1, 0]}/>
+        <Scene />
         <Digital position={[-5, -3, 0]} />
         <Alternative position={[0, -3, 0]} />
         <Curation position={[+5, -3, 0]} />
