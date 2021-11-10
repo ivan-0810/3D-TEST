@@ -29,6 +29,17 @@ export default function Model({ ...props }) {
     actions['Cube_HD.002_cell.018Action'].play().setLoop(10, 0);
     actions['Cube_HD.002_cell.019Action'].play().setLoop(10, 0);
 
+    actions['Cube_HD.002_cell.010Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.011Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.012Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.013Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.014Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.015Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.016Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.017Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.018Action'].timeScale =0.4;
+    actions['Cube_HD.002_cell.019Action'].timeScale =0.4;
+
     actions['Cube_HD.002_cell.010Action'].clampWhenFinished = true;
     actions['Cube_HD.002_cell.011Action'].clampWhenFinished = true;
     actions['Cube_HD.002_cell.012Action'].clampWhenFinished = true;
@@ -40,6 +51,7 @@ export default function Model({ ...props }) {
     actions['Cube_HD.002_cell.018Action'].clampWhenFinished = true;
     actions['Cube_HD.002_cell.019Action'].clampWhenFinished = true;
   }, []);
+  
   useFrame(() => (group.current.rotation.y += rotationSpeed / 200))
 
 
