@@ -15,6 +15,9 @@ import image from '../public/Untitled-1.jpg'
         <meta property="og:image:secure_url" 
               content={image}
              />
+             <meta property="og:image" 
+              content={image}
+             />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Tomorrow Lab" />
         <meta property="og:description" content="DIGITAL - ALTERNATIVE - CURATION" />
