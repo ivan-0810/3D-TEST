@@ -48,7 +48,7 @@ export default function Model({ ...props }) {
 
     setTimeout(() => {
       group.current.rotation.y += rotationSpeed / 200
-    }, 2000)
+    }, 3000)
   ));
  
 
