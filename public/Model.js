@@ -44,10 +44,16 @@ export default function Model({ ...props }) {
     actions['Cube_HD.002_cell.019Action'].clampWhenFinished = true;
   }, []);
 
-  useFrame(() => (group.current.rotation.y += rotationSpeed / 200));
+  useFrame(() => (
+
+    setTimeout(() => {
+      group.current.rotation.y += rotationSpeed / 200
+    }, 2000)
+  ));
+ 
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} scale={1.5} dispose={null}>
       <mesh
         name="Cube_HD002_cell010"
         geometry={nodes.Cube_HD002_cell010.geometry}

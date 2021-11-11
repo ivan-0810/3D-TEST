@@ -1,21 +1,22 @@
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Suspense, useEffect } from 'react';
+import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import Model from '../../public/Model';
 
 const Animation = () => {
-  console.log("kamera isklucena")
+
+
   return (
     <>
       <Canvas>
         <ambientLight intensity={1.13} />
-        {/* <spotLight
+        <spotLight
           intensity={0.5}
           angle={0.1}
           penumbra={1}
           position={[10, 10, 10]}
           castShadow
-        /> */}
+        />
 
         <Suspense fallback={null}>
           <OrbitControls enableZoom={false}  enablePan={false}/>
